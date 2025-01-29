@@ -1,0 +1,68 @@
+1. difference between null and undefined in js?
+    undefined:
+    undefined: when a variable is declared but has not been assigned a value, it is automatically initialized with undefined.
+
+    null:
+    null: null variables are intentionally assigned the null value.
+
+let, const is block scope
+var is function scope
+
+2. what is the use of typeof operator?
+    typeof operator is used to determine the type of each variable.
+
+3. what is type coercion in js?
+    is the automatic conversion, is used during String and Number concatenation.
+    42 + '42' = '4242'
+    string + number
+    number + boolean 
+    42 + 1 // output 43
+
+Operators & Conditions
+---------------------
+
+4.what is operator precedence?
+    As per operator precedence, operators with higher precedence are evaluated first.
+ BODMAS - Brackets-Order-Division-Multiplications-Additions-Subtraction
+
+ let a = 6, b = 3, c = 2;
+ let result = a + b * c + (a - b)
+ output: 15
+
+
+5. what is the difference between unary, binary, and ternary operators?
+    Operators based on number of operands
+    unary:
+    let a = 5
+    // Unary operator single operand
+    let b = -a;
+    output: -5;
+    ++a;
+    output: 6
+
+    Binary:
+    let x = 10
+    let y = 3
+    // Binary operator two operands
+    let z = x + y;
+    output: 13
+
+    Ternary:
+    Ternary operator - Three operands
+    let result = condition ? 'Yes' : 'No'
+    output: 'Yes'
+
+6. what is short-circuit evaluation in js?
+    AND
+    let result = false && test()
+    if any one of the condition is false the && operator will return false, but in this case first condition itself it's false. so it return false
+
+    OR
+    let result = true || someFunction();
+    // Output: true
+
+
+
+
+
+
