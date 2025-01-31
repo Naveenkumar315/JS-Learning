@@ -127,3 +127,66 @@
     Event-Driven
         Execution happens based on events, not sequentially
         server.on('request', callback)
+
+
+package.json have a metadata about the project.
+
+
+13. Explain the role of events module? How to handle events in Node?
+    events module is used to handle events.
+
+    EventEmitter class of events module is used to register event listeners and emit events.
+
+    An event listener is function that will be executed when a particular event occurs.
+
+    on() method is used to register event listeners.
+    <!-- 
+        import events module
+        const EventEmitter = require('events')
+
+        Create an instance of EventEmitter class
+        const myEmitter = new EventEmitter();
+
+        Register an event listener(eventName)
+        myEmitter.on('eventName', () => {
+            console.log('Event occurred');
+        });
+
+        Emit the event
+        myEmitter.emit('eventName');
+
+        Output: Event occurred
+     -->
+    
+14. What are Event Arguments?
+    event arguments refer to the additional information or data that can be passed along with an emitted event.
+    <!-- 
+        const EventEmitter = require("events")
+
+        Create an instance of EventEmitter class
+        const myEmitter = new EventEmitter();
+
+        Register an event listener for the 'eventName' event
+        myEmitter.on("eventName', (arg1, arg2) => {
+            console.log("Event occurred with arguments:", arg1, arg2)
+        })
+
+        Emit the 'eventName' event with arguments
+        myEmitter.emit('eventName', 'Arg 1', 'Arg 2')
+
+        Output: Event occurred with arguments: Arg1 Arg2
+     -->
+
+15. What is the difference between a function and an event?
+
+16. What is the role of http module in node?
+
+17. What are the advantages of using Express js with Node js?
+    1. Simplified Web development
+        Express js provides a lightweight framework that simplifies the process of building web applications in Node js.
+    2. Middleware support
+        Easy integration of middleware functions into application's request response cycle.
+    3. Flexible Routing system
+        Defining routes for handling different HTTP methods(Get,Post,Put,Delete, etc.) and URL patterns is easy.
+    4. Template Engine integration
+        Express js supports various template engines making it easy to generate dynamic HTML content on the server side.
